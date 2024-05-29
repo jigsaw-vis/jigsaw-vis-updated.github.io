@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw Puzzle Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <div id="dashboard">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Jigsaw')">Jigsaw Puzzle</button>
+            <button class="tablinks" onclick="openTab(event, 'Trajectory')">Trajectory Chart</button>
+            <button class="tablinks" onclick="openTab(event, 'Network')">Network Chart</button>
+            <button class="tablinks" onclick="openTab(event, 'Interaction')">Piece Interaction</button>
+        </div>
+
+        <div id="Jigsaw" class="tabcontent">
+            <div id="myDiv"></div>
+        </div>
+
+        <div id="Trajectory" class="tabcontent">
+            <div id="trajectoryChart"></div>
+        </div>
+
+        <div id="Network" class="tabcontent">
+            <div id="networkChart"></div>
+        </div>
+
+        <div id="Interaction" class="tabcontent">
+            <div id="interactionChart"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
